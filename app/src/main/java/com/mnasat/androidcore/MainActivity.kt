@@ -3,6 +3,7 @@ package com.mnasat.androidcore
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.mnasat.logutil.CoreUtils
 import com.mnasat.logutil.ToastUtils
 
 class MainActivity : AppCompatActivity() {
@@ -11,6 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-    ToastUtils.doToast(this,"hello world")
+        CoreUtils.doToast(this)
     }
 }
